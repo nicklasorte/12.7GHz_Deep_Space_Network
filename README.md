@@ -7,7 +7,7 @@ Run: https://github.com/nicklasorte/itm_matlab_example
 
 Then download the files from this repository.
 
-Run the matlab file: 
+Run the matlab file: https://github.com/nicklasorte/12.7GHz_Deep_Space_Network/blob/main/init_NASA_DSN_github_rev1.m
 
 You'll need to also download:
 
