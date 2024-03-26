@@ -42,14 +42,14 @@ rev=5001; %%%%%%Goldstone Example
 str_location_name='Goldstone'
 str_system_id='DSN'  %%%%%%%%%%%System Nomenclature
 sim_radius_km=301; %%%%%%%%Placeholder distance --> Simplification: This is an automated calculation, but requires additional processing time.
-grid_spacing=50;  %%%%km:
+grid_spacing=1;  %%%%km:
 bs_eirp=75; %%%%%EIRP [dBm/100MHz] 
 bs_height=30;
 min_rx_ant_elevation=6; %%%%%% Minimum Elevation Degrees (6)
 %%%%%%%%%%%%%%%%%%%%%First, pull all the non-ITM terrain dB reductions in the base stations EIRP (excluding the federal antenna pattern)
 array_mitigation=0:10:50;
 array_bs_eirp_reductions=bs_eirp; %%%%%%No reductions at this point, just moved all of them to mitigations
-receiver_threshold=-110
+receiver_threshold=-110  %%%%%[dBm/100MHz] 
 tf_calc_rx_angle=1  %%%%%%If ==1, you will also need TIREM.
 sim_folder1=folder1
 % % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -140,7 +140,8 @@ pause(0.1)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 tf_server_status=0;
 parallel_flag=0;
-wrapper_bugsplat_rev6(app,rev_folder,parallel_flag,tf_server_status) %%%%%%%%%%%There is also a complied app that does this, specifically to run on the servers
+tf_recalculate=0;
+wrapper_bugsplat_rev6(app,rev_folder,parallel_flag,tf_server_status,tf_recalculate) %%%%%%%%%%%There is also a complied app that does this, specifically to run on the servers
 
 
 
