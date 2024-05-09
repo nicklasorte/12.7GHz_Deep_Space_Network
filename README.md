@@ -14,3 +14,8 @@ You'll need to also download:
 https://github.com/nicklasorte/general_terrestrial_pathloss
 
 https://github.com/nicklasorte/Generic_Bugsplat
+
+
+For the Matlab Runtime App:
+Install Matlab Runtime 2022b: https://www.mathworks.com/products/compiler/matlab-runtime.html
+
