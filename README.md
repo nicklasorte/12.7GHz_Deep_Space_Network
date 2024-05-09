@@ -19,3 +19,11 @@ https://github.com/nicklasorte/Generic_Bugsplat
 For the Matlab Runtime App:
 Install Matlab Runtime 2022b: https://www.mathworks.com/products/compiler/matlab-runtime.html
 
+Run: bugsplat_angles_rev2_8
+Deselect the check box "Server Status on Z Drive"
+Click on the Button: "Select Sim Folder and Run"
+A window will pop-up.
+Click on Rev##
+Click on "select folder"
+It should run.
+
