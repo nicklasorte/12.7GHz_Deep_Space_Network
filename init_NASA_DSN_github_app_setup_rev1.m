@@ -54,11 +54,11 @@ multi_array_ant_gain_vertical=horzcat(array_ant_gain_70m(:,2),array_ant_gain_34m
 % % sim_folder1=folder1
 % % % % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-rev=5002; %%%%%%Goldstone Example
+rev=5003; %%%%%%Goldstone Example
 str_location_name='Goldstone'
 str_system_id='DSN'  %%%%%%%%%%%System Nomenclature
-sim_radius_km=301; %%%%%%%%Placeholder distance --> Simplification: This is an automated calculation, but requires additional processing time.
-grid_spacing=100;  %%%%km:
+sim_radius_km=50; %%%%%%%%Placeholder distance --> Simplification: This is an automated calculation, but requires additional processing time.
+grid_spacing=10;  %%%%km:
 bs_eirp=75; %%%%%EIRP [dBm/100MHz] 
 bs_height=30;
 min_rx_ant_elevation=6; %%%%%% Minimum Elevation Degrees (6)
@@ -150,15 +150,15 @@ end
 cd(rev_folder)
 pause(0.1)
 
-% % 
-% % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Now running the simulation
-% % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% % tf_server_status=0;
-% % parallel_flag=0;
-% % tf_recalculate=0;
-% % wrapper_bugsplat_rev6(app,rev_folder,parallel_flag,tf_server_status,tf_recalculate) %%%%%%%%%%%There is also a complied app that does this, specifically to run on the servers
-% % 
+
+% % % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% % % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Now running the simulation
+% % % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% % % tf_server_status=0;
+% % % parallel_flag=0;
+% % % tf_recalculate=0;
+% % % wrapper_bugsplat_rev6(app,rev_folder,parallel_flag,tf_server_status,tf_recalculate) %%%%%%%%%%%There is also a complied app that does this, specifically to run on the servers
+
 
 
 end_clock=clock;
